@@ -1,0 +1,191 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="camera_preview_stroke">7dp</dimen>
+    <dimen name="card_info_padding_bottom">10dp</dimen>
+
+    <!-- main 线 宽 高 -->
+    <dimen name="main_line_width">5dp</dimen>
+    <dimen name="main_line_height">74dp</dimen>
+    <dimen name="main_line_start">100dp</dimen>
+    <dimen name="main_line_width_port">5dp</dimen>
+    <dimen name="main_line_height_port">185dp</dimen>
+    <dimen name="main_line_start_port">100dp</dimen>
+    <dimen name="main_frame_start">76dp</dimen>
+    <dimen name="main_frame_end_port">76dp</dimen>
+    <dimen name="main_frame_start_port">76dp</dimen>
+    <dimen name="main_img_error_bottom">150dp</dimen>
+
+    <!-- top_bar -->
+    <dimen name="top_bar_frame_start">40dp</dimen>
+    <dimen name="top_bar_title_size">46sp</dimen>
+    <dimen name="top_bar_img_start">20dp</dimen>
+    <dimen name="top_bar_img_end">40dp</dimen>
+
+    <!-- user_info -->
+
+    <dimen name="user_info_img_vip_end">0dp</dimen>
+    <dimen name="user_info_img_vip_start">0dp</dimen>
+    <dimen name="user_info_img_flower_end">20dp</dimen>
+    <dimen name="user_info_img_flower_start">30dp</dimen>
+
+    <dimen name="tv_title_size">50sp</dimen>
+    <dimen name="tv_content_size">36sp</dimen>
+
+    <!--轮播图 小圆点和textview -->
+    <dimen name="pager_tv_padding">8dp</dimen>
+    <dimen name="linear_tv_padding">15dp</dimen>
+
+    <!-- 二维码 begin -->
+    <dimen name="iv_qrcode_back_marginTop">336dp</dimen>
+    <dimen name="iv_qrcode_back_width">262dp</dimen>
+    <dimen name="iv_qrcode_back_height">286dp</dimen>
+    <dimen name="iv_qrcode_marginTop">56dp</dimen>
+    <dimen name="iv_qrcode_marginRight">8dp</dimen>
+    <dimen name="iv_qrcode_width">150dp</dimen>
+    <dimen name="iv_qrcode_height">150dp</dimen>
+    <dimen name="iv_qrcode_margin_end">1dp</dimen>
+    <!-- 二维码 end -->
+
+    <!-- 分班播报 begin -->
+    <dimen name="class_speaker_title_bg_height">123dp</dimen>
+    <dimen name="class_speaker_title_text_size">45sp</dimen>
+    <dimen name="class_speaker_title_close_margin_right">28dp</dimen>
+    <dimen name="class_speaker_title_close_margin_top">25dp</dimen>
+    <dimen name="class_speaker_setting1_topic_margin_top">77dp</dimen>
+    <dimen name="class_speaker_setting1_topic_text_size">45sp</dimen>
+    <dimen name="class_speaker_setting1_content_text_size">28sp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_top">56dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_left">82dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_right">84dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_margin_top">56dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_status_margin_right">28dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_margin_top">34dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_status_margin_right">28dp</dimen>
+    <dimen name="class_speaker_setting1_status_content_size">40sp</dimen>
+    <dimen name="class_speaker_setting1_button_margin_top">84dp</dimen>
+    <dimen name="class_speaker_setting1_button_height">84dp</dimen>
+    <dimen name="class_speaker_setting1_button_width">280dp</dimen>
+    <dimen name="class_speaker_setting1_button_radius">42dp</dimen>
+    <dimen name="class_speaker_setting2_title_height">140dp</dimen>
+    <dimen name="class_speaker_setting2_title_text_size">34sp</dimen>
+    <dimen name="class_speaker_setting2_title_line_margin_left">28dp</dimen>
+    <dimen name="class_speaker_setting2_title_line_margin_right">14dp</dimen>
+    <dimen name="class_speaker_setting2_divider">14dp</dimen>
+    <dimen name="class_speaker_setting2_item_height">168dp</dimen>
+    <dimen name="class_speaker_setting2_item_margin">17dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_height">70dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_radius">35dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_radius_width">3dp</dimen>
+    <dimen name="class_speaker_setting3_title_height">176dp</dimen>
+    <dimen name="class_speaker_setting3_title_circle">48dp</dimen>
+    <dimen name="class_speaker_setting3_title_divider">4dp</dimen>
+    <dimen name="class_speaker_setting3_tip_margin_top">126dp</dimen>
+    <dimen name="class_speaker_setting3_tips_width">888dp</dimen>
+    <dimen name="class_speaker_setting3_tips_height">189dp</dimen>
+    <dimen name="class_speaker_setting3_tips_margin_top">154dp</dimen>
+    <dimen name="class_speaker_setting3_button_height">237dp</dimen>
+    <dimen name="class_speaker_setting3_button_divider">210dp</dimen>
+    <dimen name="class_speaker_setting4_edit_width">445dp</dimen>
+    <dimen name="class_speaker_setting4_edit_height">70dp</dimen>
+    <dimen name="class_speaker_setting4_port_tip_margin">87dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_width">714dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_height">420dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_title_margin_top">106dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_button_width">224dp</dimen>
+    <!-- 分班播报 end -->
+
+    <dimen name="mainPaddingStart">30dp</dimen>
+    <dimen name="mainPaddingEnd">30dp</dimen>
+    <dimen name="mainPaddingTop">15dp</dimen>
+    <dimen name="mainPaddingBottom">15dp</dimen>
+
+    <dimen name="clockTextSize">35sp</dimen>
+    <dimen name="iv_width">30dp</dimen>
+    <dimen name="iv_height">30dp</dimen>
+
+    <dimen name="tv_title_marginTop">30dp</dimen>
+    <dimen name="tv_title_textSize">55sp</dimen>
+
+    <dimen name="iv_selector_divider">30dp</dimen>
+    <dimen name="iv_selector_divider_half">15dp</dimen>
+
+    <dimen name="ad_block_margin_end">60dp</dimen>
+    <dimen name="user_info_margin">60dp</dimen>
+    <dimen name="ad_block_width">195dp</dimen>
+    <dimen name="iv_holder_block_radius">20dp</dimen>
+
+    <dimen name="system_notice_paddingTop">10dp</dimen>
+    <dimen name="system_notice_paddingStart">50dp</dimen>
+
+    <dimen name="qrcode_margin">5dp</dimen>
+    <dimen name="ad_margin">1dp</dimen>
+
+    <dimen name="family_width">180dp</dimen>
+    <dimen name="family_height">180dp</dimen>
+
+    <dimen name="family_name">12sp</dimen>
+
+    <dimen name="user_avatar">125dp</dimen>
+
+    <dimen name="main_camera_padding">25dp</dimen>
+
+    <!--   ############   -->
+    <dimen name="main_bg_left_margin_start">60dp</dimen>
+    <dimen name="main_bg_right_margin_end">220dp</dimen>
+    <dimen name="main_bg_margin_bottom">140dp</dimen>
+
+    <dimen name="main_clock_margin_top">25dp</dimen>
+    <dimen name="main_clock_margin_start">50dp</dimen>
+    <dimen name="main_clock_text_size">32sp</dimen>
+
+    <dimen name="main_iv_icon_width">30dp</dimen>
+    <dimen name="main_iv_icon_height">30dp</dimen>
+    <dimen name="main_iv_icon_list_margin_end">50dp</dimen>
+    <dimen name="main_iv_icon_margin_end">20dp</dimen>
+    <dimen name="main_iv_icon_margin_top">25dp</dimen>
+
+    <dimen name="main_school_name_margin_top">25dp</dimen>
+    <dimen name="main_school_name_text_size">55sp</dimen>
+
+    <dimen name="main_machine_info_margin_bottom">20dp</dimen>
+    <dimen name="main_machine_info_margin_end">30dp</dimen>
+
+    <dimen name="main_system_notice_margin_bottom">20dp</dimen>
+
+    <dimen name="main_selector_margin_start">50dp</dimen>
+    <dimen name="main_selector_margin_bottom">30dp</dimen>
+
+    <dimen name="main_logo_margin_bottom">40dp</dimen>
+    <dimen name="main_logo_margin_top">40dp</dimen>
+    <dimen name="main_logo_margin_end">60dp</dimen>
+    <dimen name="main_logo_margin">10dp</dimen>
+
+    <dimen name="main_margin">40dp</dimen>
+
+    <dimen name="main_family_height">180dp</dimen>
+    <dimen name="main_family_margin_top">40dp</dimen>
+    <dimen name="main_family_margin_start">80dp</dimen>
+    <dimen name="main_family_margin_end">80dp</dimen>
+    <dimen name="main_family_text_size">18sp</dimen>
+
+    <dimen name="camera_preview_width">570dp</dimen>
+    <dimen name="camera_preview_height">440dp</dimen>
+
+    <dimen name="camera_preview_margin_top">60dp</dimen>
+    <dimen name="camera_preview_margin_start">80dp</dimen>
+    <dimen name="camera_preview_margin_bottom">40dp</dimen>
+    <dimen name="camera_preview_padding">28dp</dimen>
+
+    <dimen name="main_bubble_width">60dp</dimen>
+    <dimen name="main_bubble_height">30dp</dimen>
+    <dimen name="main_bubble_margin_top">90dp</dimen>
+
+    <dimen name="main_user_avatar_width">90dp</dimen>
+    <dimen name="main_user_avatar_height">90dp</dimen>
+    <dimen name="main_user_info_margin_top">32dp</dimen>
+
+    <dimen name="main_logo_width">200dp</dimen>
+    <dimen name="main_qrcode_tip">16sp</dimen>
+    <!--   ############   -->
+</resources>

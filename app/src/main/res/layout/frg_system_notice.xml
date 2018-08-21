@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bbtree.cardreader.widget.MarqueeTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_system_notice"
+    style="@style/tv_system_notice"
+    fontPath="@string/font_path"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/system_notice2"
+    android:gravity="bottom"
+    android:maxLines="1"
+    android:text="@string/default_system_notice" />

@@ -1,0 +1,100 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="camera_preview_stroke">7dp</dimen>
+
+    <!-- main 线 宽 高 -->
+    <dimen name="main_line_width">5dp</dimen>
+    <dimen name="main_line_height">38dp</dimen>
+    <dimen name="main_line_start">100dp</dimen>
+    <dimen name="main_line_width_port">5dp</dimen>
+    <dimen name="main_line_height_port">90dp</dimen>
+    <dimen name="main_line_start_port">100dp</dimen>
+    <dimen name="main_frame_start">76dp</dimen>
+    <dimen name="main_frame_end_port">49dp</dimen>
+    <dimen name="main_frame_start_port">48dp</dimen>
+    <dimen name="main_img_error_bottom">100dp</dimen>
+
+    <!-- top_bar2 -->
+    <dimen name="top_bar_frame_start">26dp</dimen>
+    <dimen name="top_bar_title_size">32sp</dimen>
+    <dimen name="top_bar_img_start">20dp</dimen>
+    <dimen name="top_bar_img_end">26dp</dimen>
+
+    <!-- user_info -->
+    <dimen name="user_info_img_vip_end">10dp</dimen>
+    <dimen name="user_info_img_vip_start">10dp</dimen>
+    <dimen name="user_info_img_flower_end">10dp</dimen>
+    <dimen name="user_info_img_flower_start">10dp</dimen>
+
+    <dimen name="tv_title_size">33sp</dimen>
+    <dimen name="tv_content_size">24sp</dimen>
+
+    <!--轮播图 小圆点和textview -->
+    <dimen name="pager_tv_padding">5dp</dimen>
+    <dimen name="linear_tv_padding">10dp</dimen>
+
+    <!-- 二维码 begin -->
+    <dimen name="iv_qrcode_back_marginTop">112dp</dimen>
+    <dimen name="iv_qrcode_back_width">87dp</dimen>
+    <dimen name="iv_qrcode_back_height">95dp</dimen>
+    <dimen name="iv_qrcode_marginTop">18dp</dimen>
+    <dimen name="iv_qrcode_marginRight">3dp</dimen>
+    <dimen name="iv_qrcode_width">50dp</dimen>
+    <dimen name="iv_qrcode_height">50dp</dimen>
+    <dimen name="iv_qrcode_margin_end">1dp</dimen>
+    <!-- 二维码 end -->
+
+    <!-- 分班播报 begin -->
+    <dimen name="class_speaker_title_bg_height">44dp</dimen>
+    <dimen name="class_speaker_title_text_size">18sp</dimen>
+    <dimen name="class_speaker_title_close_margin_right">10dp</dimen>
+    <dimen name="class_speaker_title_close_margin_top">9dp</dimen>
+    <dimen name="class_speaker_setting1_topic_margin_top">28dp</dimen>
+    <dimen name="class_speaker_setting1_topic_text_size">16sp</dimen>
+    <dimen name="class_speaker_setting1_content_text_size">10sp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_top">20dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_left">30dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_right">30dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_margin_top">20dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_status_margin_right">10dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_margin_top">12dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_status_margin_right">10dp</dimen>
+    <dimen name="class_speaker_setting1_status_content_size">14sp</dimen>
+    <dimen name="class_speaker_setting1_button_margin_top">30dp</dimen>
+    <dimen name="class_speaker_setting1_button_height">30dp</dimen>
+    <dimen name="class_speaker_setting1_button_width">100dp</dimen>
+    <dimen name="class_speaker_setting1_button_radius">15dp</dimen>
+    <dimen name="class_speaker_setting2_title_height">50dp</dimen>
+    <dimen name="class_speaker_setting2_title_text_size">12sp</dimen>
+    <dimen name="class_speaker_setting2_title_line_margin_left">10dp</dimen>
+    <dimen name="class_speaker_setting2_title_line_margin_right">5dp</dimen>
+    <dimen name="class_speaker_setting2_divider">5dp</dimen>
+    <dimen name="class_speaker_setting2_item_height">60dp</dimen>
+    <dimen name="class_speaker_setting2_item_margin">6dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_height">25dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_radius">12dp</dimen>
+    <dimen name="class_speaker_setting2_item_button_radius_width">1dp</dimen>
+    <dimen name="class_speaker_setting3_title_height">63dp</dimen>
+    <dimen name="class_speaker_setting3_title_circle">17dp</dimen>
+    <dimen name="class_speaker_setting3_title_divider">2dp</dimen>
+    <dimen name="class_speaker_setting3_tip_margin_top">45dp</dimen>
+    <dimen name="class_speaker_setting3_tips_width">321dp</dimen>
+    <dimen name="class_speaker_setting3_tips_height">77dp</dimen>
+    <dimen name="class_speaker_setting3_tips_margin_top">55dp</dimen>
+    <dimen name="class_speaker_setting3_button_height">85dp</dimen>
+    <dimen name="class_speaker_setting3_button_divider">75dp</dimen>
+    <dimen name="class_speaker_setting4_edit_width">159dp</dimen>
+    <dimen name="class_speaker_setting4_edit_height">25dp</dimen>
+    <dimen name="class_speaker_setting4_port_tip_margin">31dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_width">255dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_height">150dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_title_margin_top">38dp</dimen>
+    <dimen name="class_speaker_setting5_dialog_button_width">80dp</dimen>
+    <!-- 分班播报 end -->
+
+    <dimen name="mainPaddingTop">8dp</dimen>
+
+    <dimen name="main_logo_width">200dp</dimen>
+    <dimen name="main_qrcode_tip">14sp</dimen>
+
+</resources>

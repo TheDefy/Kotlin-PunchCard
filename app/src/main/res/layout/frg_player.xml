@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_screensaver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bbtree.videoplayer.widget.media.IjkVideoView
+        android:id="@+id/player_ijk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

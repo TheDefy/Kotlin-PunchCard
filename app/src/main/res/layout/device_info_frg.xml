@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/device_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="35dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/registerTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#009688"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/device_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/no_sign_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_register_filed_version_name" />
+
+                <TextView
+                    android:id="@+id/versionName"
+                    style="@style/no_sign_tip"
+                    fontPath="fonts/DejaVuSerif.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/no_sign_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_register_filed_device_id" />
+
+                <TextView
+                    android:id="@+id/deviceId"
+                    style="@style/no_sign_tip"
+                    fontPath="fonts/DejaVuSerif.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

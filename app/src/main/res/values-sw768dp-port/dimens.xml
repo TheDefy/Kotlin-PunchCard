@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="camera_preview_width">350dp</dimen>
+    <dimen name="camera_preview_height">270dp</dimen>
+    <dimen name="camera_preview_stroke">7dp</dimen>
+
+    <!-- 二维码 begin -->
+    <dimen name="iv_qrcode_back_marginTop">43dp</dimen>
+    <dimen name="iv_qrcode_back_width">135dp</dimen>
+    <dimen name="iv_qrcode_back_height">154dp</dimen>
+    <dimen name="iv_qrcode_marginTop">22dp</dimen>
+    <dimen name="iv_qrcode_width">94dp</dimen>
+    <dimen name="iv_qrcode_height">94dp</dimen>
+    <dimen name="iv_qrcode_margin_end">1dp</dimen>
+    <!-- 二维码 end -->
+
+    <!-- 分班播报 begin -->
+    <dimen name="class_speaker_title_bg_height">132dp</dimen>
+    <dimen name="class_speaker_title_text_size">44sp</dimen>
+    <dimen name="class_speaker_title_close_margin_right">20dp</dimen>
+    <dimen name="class_speaker_title_close_margin_top">37dp</dimen>
+    <dimen name="class_speaker_setting1_topic_margin_top">74dp</dimen>
+    <dimen name="class_speaker_setting1_topic_text_size">32sp</dimen>
+    <dimen name="class_speaker_setting1_content_text_size">20sp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_top">40dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_left">40dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_right">40dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_margin_top">80dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_status_margin_right">20dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_margin_top">24dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_status_margin_right">20dp</dimen>
+    <dimen name="class_speaker_setting1_status_content_size">28sp</dimen>
+    <dimen name="class_speaker_setting1_button_margin_top">78dp</dimen>
+    <dimen name="class_speaker_setting1_button_height">60dp</dimen>
+    <dimen name="class_speaker_setting1_button_width">200dp</dimen>
+    <dimen name="class_speaker_setting1_button_radius">30dp</dimen>
+    <!-- 分班播报 end -->
+
+    <!---->
+    <dimen name="main_bg_left_margin_start">23dp</dimen>
+    <dimen name="main_bg_right_margin_end">23dp</dimen>
+    <dimen name="main_bg_margin_bottom">267dp</dimen>
+
+    <dimen name="main_school_name_margin_top">53dp</dimen>
+    <dimen name="main_margin">53dp</dimen>
+
+    <dimen name="camera_preview_margin_top">53dp</dimen>
+    <dimen name="camera_preview_margin_start">53dp</dimen>
+    <dimen name="camera_preview_margin_bottom">0dp</dimen>
+
+    <dimen name="main_bubble_margin_top">20dp</dimen>
+
+    <dimen name="main_logo_margin_bottom">27dp</dimen>
+    <dimen name="main_logo_margin">27dp</dimen>
+
+    <dimen name="main_family_height">80dp</dimen>
+    <dimen name="main_family_margin_end">65dp</dimen>
+    <dimen name="main_no_user_margin_start">27dp</dimen>
+
+    <dimen name="main_logo_height">130dp</dimen>
+    <!---->
+
+</resources>

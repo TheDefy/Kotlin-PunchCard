@@ -1,0 +1,4 @@
+<resources>
+    <integer name="speakerCodeMaxLength">30</integer>
+    <integer name="speakerNameMaxLength">15</integer>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--content layout-->
+    <style name="layout_content_area">
+        <item name="android:paddingTop">23dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">53dp</item>
+        <item name="android:paddingRight">53dp</item>
+    </style>
+    <!--默认欢迎界面-->
+    <style name="tv_welcome_school">
+        <item name="android:textSize">38sp</item>
+    </style>
+    <!--默认欢迎界面-->
+    <style name="layout_welcome_school">
+        <item name="android:layout_height">235dp</item>
+    </style>
+    <!--默认欢迎界面两条线-->
+    <style name="line_welcome_school">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginStart">53dp</item>
+        <item name="android:layout_marginEnd">53dp</item>
+    </style>
+    <!--系统通知-->
+    <style name="tv_system_notice">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+    <!--天气，相机、打卡信息 容器-->
+    <style name="layout_content_sub_area">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <!--时间-->
+    <style name="tc_text_clock">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--日期-->
+    <style name="tc_text_date">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginStart">33dp</item>
+    </style>
+    <!--天气下面的两条白线-->
+    <style name="line_view_for_weather">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginStart">53dp</item>
+        <item name="android:layout_marginEnd">53dp</item>
+    </style>
+    <!--家人列表左边的两条白线-->
+    <style name="line_view_for_family">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_marginTop">100dp</item>
+        <item name="android:layout_marginBottom">100dp</item>
+    </style>
+    <!--孩子头像容器-->
+    <style name="layout_user_avatar">
+        <item name="android:layout_margin">40dp</item>
+    </style>
+    <!--孩子头像-->
+    <style name="im_user_avatar">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+    <!--孩子名字-->
+    <style name="tv_user_name">
+        <item name="android:textSize">34sp</item>
+    </style>
+    <!--孩子班级-->
+    <style name="tv_class_name">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginStart">20dp</item>
+    </style>
+    <!--用户打卡信息表->文字-->
+    <style name="tv_user_info_table">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!--用户打卡信息表->图像-->
+    <style name="iv_user_info_table">
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+    <!--用户打卡信息表->容器-->
+    <style name="layout_user_info_table">
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+    <!--接送家长头像列表-->
+    <style name="iv_family_avatar">
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:layout_marginLeft">46dp</item>
+        <item name="android:layout_marginRight">46dp</item>
+    </style>
+    <!--家长列表名字-->
+    <style name="tv_family_name">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <!--相机尺寸-->
+    <style name="layout_camera">
+        <item name="android:padding">6dp</item>
+    </style>
+    <!--相机尺寸-->
+    <style name="gl_camera">
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">240dp</item>
+    </style>
+    <!--相机\校园之星容器-->
+    <style name="layout_camera_and_star">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginBottom">80dp</item>
+        <item name="android:layout_width">332dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--校园之星容寸-->
+    <style name="layout_star">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <!--校园之星 头像-->
+    <style name="iv_school_star">
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:layout_width">66dp</item>
+        <item name="android:layout_height">66dp</item>
+    </style>
+    <!--天气预报描述-->
+    <style name="tv_weather_desc">
+        <item name="android:textSize">17sp</item>
+    </style>
+    <!--天气预报温度-->
+    <style name="tv_weather_temp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <!--天气预报图标-->
+    <style name="iv_weather_icon">
+        <item name="android:layout_marginStart">23dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--校园之星tip-->
+    <style name="tv_vertical_tip">
+        <item name="mvTextSize">16sp</item>
+    </style>
+    <!--屏幕保护-->
+    <style name="layout_screensaver">
+        <item name="android:paddingBottom">80dp</item>
+    </style>
+    <!--版本号信息-->
+    <style name="tv_version_info">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <!--校园通知->轮播图-->
+    <style name="tv_school_notice">
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+    <!--欢迎界面狮子和长颈鹿-->
+    <style name="iv_lion_giraffe">
+        <item name="android:layout_marginEnd">100dp</item>
+    </style>
+</resources>

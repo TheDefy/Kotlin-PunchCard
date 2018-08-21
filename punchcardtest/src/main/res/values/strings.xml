@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">智慧树破解版</string>
+    <string name="str_to_work">上班</string>
+    <string name="str_out_work">下班</string>
+    <string name="str_null_photo">无图</string>
+    <string name="str_time">选择打卡时间</string>
+    <string name="str_overtime">加班</string>
+    <string name="str_punch_card">打卡</string>
+</resources>

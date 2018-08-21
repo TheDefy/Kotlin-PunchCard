@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/mainPaddingStart"
+    android:paddingEnd="@dimen/mainPaddingStart"
+    android:paddingStart="@dimen/mainPaddingStart"
+    android:paddingTop="@dimen/mainPaddingStart">
+
+    <TextView
+        android:id="@+id/notice_title"
+        style="@style/tv_title_style"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/system_notice_paddingStart"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="aaaaa"
+        android:textColor="@color/bb_loading_green"
+        android:textSize="@dimen/tv_title_size" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/wave" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.bbtree.cardreader.view.widget.VerticalMarqueeTextView
+            android:id="@+id/notice_content"
+            style="@style/content_lineSpacingExtra"
+            fontPath="@string/font_path_cctyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bb_loading_green"
+            android:textSize="@dimen/tv_content_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice_sign"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="@dimen/tv_content_size"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/notice_date"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="@dimen/tv_content_size"
+        android:visibility="gone" />
+
+</LinearLayout>

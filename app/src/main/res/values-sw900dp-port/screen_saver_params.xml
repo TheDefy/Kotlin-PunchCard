@@ -1,0 +1,4 @@
+<resources>
+    <integer name="screenSaverTargetWidth">750</integer>
+    <integer name="screenSaverTargetHeight">1020</integer>
+</resources>

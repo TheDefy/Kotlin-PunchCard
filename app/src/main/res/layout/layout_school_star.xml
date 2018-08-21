@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_school_starA"
+            style="@style/iv_school_star"
+            android:layout_gravity="center"
+            android:src="@mipmap/baby_face_default2" />
+
+        <TextView
+            android:id="@+id/tv_school_star_nameA"
+            style="@style/tv_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@mipmap/bg_family_list_name_cyan"
+            android:gravity="center"
+            android:text="张三" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_school_starB"
+            style="@style/iv_school_star"
+            android:layout_gravity="center"
+            android:src="@mipmap/baby_face_default2" />
+
+        <TextView
+            android:id="@+id/tv_school_star_nameB"
+            style="@style/tv_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@mipmap/bg_family_list_name_pink"
+            android:gravity="center"
+            android:text="李四" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_school_starC"
+            style="@style/iv_school_star"
+            android:layout_gravity="center"
+            android:src="@mipmap/baby_face_default2" />
+
+        <TextView
+            android:id="@+id/tv_school_star_nameC"
+            style="@style/tv_family_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@mipmap/bg_family_list_name_cyan"
+            android:gravity="center"
+            android:text="王五" />
+    </LinearLayout>
+
+</LinearLayout>

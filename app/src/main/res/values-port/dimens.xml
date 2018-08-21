@@ -1,0 +1,64 @@
+<resources>
+
+    <dimen name="camera_preview_width">350dp</dimen>
+    <dimen name="camera_preview_height">270dp</dimen>
+
+    <!-- 二维码 begin -->
+    <dimen name="iv_qrcode_back_marginTop">20dp</dimen>
+    <dimen name="iv_qrcode_back_width">126dp</dimen>
+    <dimen name="iv_qrcode_back_height">144dp</dimen>
+    <dimen name="iv_qrcode_marginTop">20dp</dimen>
+    <dimen name="iv_qrcode_width">88dp</dimen>
+    <dimen name="iv_qrcode_height">88dp</dimen>
+    <dimen name="iv_qrcode_margin_end">1dp</dimen>
+    <!-- 二维码 end -->
+
+    <!-- 分班播报 begin -->
+    <dimen name="class_speaker_title_bg_height">66dp</dimen>
+    <dimen name="class_speaker_title_text_size">22sp</dimen>
+    <dimen name="class_speaker_title_close_margin_right">10dp</dimen>
+    <dimen name="class_speaker_title_close_margin_top">18dp</dimen>
+    <dimen name="class_speaker_setting1_topic_margin_top">37dp</dimen>
+    <dimen name="class_speaker_setting1_topic_text_size">16sp</dimen>
+    <dimen name="class_speaker_setting1_content_text_size">10sp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_top">20dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_left">20dp</dimen>
+    <dimen name="class_speaker_setting1_content_margin_right">20dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_margin_top">40dp</dimen>
+    <dimen name="class_speaker_setting1_send_layout_status_margin_right">10dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_margin_top">12dp</dimen>
+    <dimen name="class_speaker_setting1_net_layout_status_margin_right">10dp</dimen>
+    <dimen name="class_speaker_setting1_status_content_size">14sp</dimen>
+    <dimen name="class_speaker_setting1_button_margin_top">39dp</dimen>
+    <dimen name="class_speaker_setting1_button_height">30dp</dimen>
+    <dimen name="class_speaker_setting1_button_width">100dp</dimen>
+    <dimen name="class_speaker_setting1_button_radius">15dp</dimen>
+    <!-- 分班播报 end -->
+
+    <!---->
+    <dimen name="main_bg_left_margin_start">23dp</dimen>
+    <dimen name="main_bg_right_margin_end">23dp</dimen>
+    <dimen name="main_bg_margin_bottom">267dp</dimen>
+
+    <dimen name="main_school_name_margin_top">53dp</dimen>
+    <dimen name="main_margin">53dp</dimen>
+
+    <dimen name="camera_preview_margin_top">53dp</dimen>
+    <dimen name="camera_preview_margin_start">53dp</dimen>
+    <dimen name="camera_preview_margin_bottom">0dp</dimen>
+
+    <dimen name="main_bubble_margin_top">20dp</dimen>
+
+    <dimen name="main_logo_margin_bottom">27dp</dimen>
+    <dimen name="main_logo_margin">27dp</dimen>
+
+    <dimen name="main_family_height">80dp</dimen>
+    <dimen name="main_family_margin_end">50dp</dimen>
+    <dimen name="main_no_user_margin_start">27dp</dimen>
+
+    <dimen name="main_logo_height">130dp</dimen>
+    <!---->
+
+    <dimen name="mainPaddingTop">8dp</dimen>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/class_speaker_setting2_item_delete_button_bg_yes_shape" android:state_pressed="true" />
+    <item android:drawable="@drawable/class_speaker_setting2_item_delete_button_bg_no_shape" android:state_pressed="false" />
+
+</selector>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/class_speaker_setting2_title_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/class_speaker_setting2_title_line_margin_right"
+            android:layout_marginStart="@dimen/class_speaker_setting2_title_line_margin_left"
+            android:src="@mipmap/class_speaker_setting2_title_line" />
+
+        <TextView
+            fontPath="@string/font_path_cctyt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/speaker_setting2_title"
+            android:textColor="@color/green"
+            android:textSize="@dimen/class_speaker_setting2_title_text_size" />
+
+        <Button
+            fontPath="@string/font_path_cctyt"
+            android:id="@+id/bt_add"
+            android:layout_width="@dimen/class_speaker_setting1_button_width"
+            android:layout_height="@dimen/class_speaker_setting1_button_height"
+            android:layout_marginEnd="@dimen/class_speaker_setting2_title_line_margin_left"
+            android:background="@drawable/class_speaker_setting2_button_add_shape"
+            android:gravity="center"
+            android:text="@string/speaker_setting2_add"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/class_speaker_setting2_divider"
+        android:layout_below="@id/ll_title"
+        android:background="@color/class_speaker_setting2_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/v_divider">
+
+        <TextView
+            fontPath="@string/font_path_cctyt"
+            android:id="@+id/tv_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/speaker_setting2_none"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/class_speaker_setting1_content_text_size" />
+
+        <ListView
+            android:id="@+id/lv_speakers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/class_speaker_setting2_title_line_margin_left"
+            android:layout_marginStart="@dimen/class_speaker_setting1_content_margin_top"
+            android:divider="@color/class_speaker_setting2_item_divider"
+            android:scrollbarThumbVertical="@drawable/class_speaker_setting2_item_scrollbar_shape"
+            android:scrollbarTrackVertical="@drawable/class_speaker_setting2_item_scrollbar_bg_shape"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

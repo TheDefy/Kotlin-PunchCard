@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Linear_frame_style">
+        <item name="android:paddingTop">118dp</item>
+        <item name="android:paddingLeft">226dp</item>
+        <item name="android:paddingRight">226dp</item>
+    </style>
+
+    <style name="tv_title_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="content_frame_style">
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:layout_marginTop">53dp</item>
+    </style>
+
+    <style name="content_lineSpacingExtra">
+        <item name="android:lineSpacingExtra">23dp</item>
+    </style>
+
+
+    <style name="Linear_frame_port_style">
+        <item name="android:paddingTop">183dp</item>
+        <item name="android:paddingLeft">123dp</item>
+        <item name="android:paddingRight">123dp</item>
+    </style>
+
+    <style name="tv_title_port_style">
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="content_frame_port_style">
+        <item name="android:layout_marginBottom">53dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+    </style>
+
+    <style name="content_lineSpacingExtra_port">
+        <item name="android:lineSpacingExtra">23dp</item>
+    </style>
+
+
+</resources>

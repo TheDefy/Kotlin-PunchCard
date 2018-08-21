@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="camera_catch_base_layout"><!--横版摄像头容器-->
+        <item name="android:paddingBottom">25dp</item>
+        <item name="android:layout_marginLeft">85dp</item>
+    </style>
+
+    <style name="camera_catch_base_layout_port"><!--竖版摄像头容器-->
+        <item name="android:layout_marginTop">50dp</item>
+    </style>
+
+    <style name="family_base_layout">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="family_base_layout_port">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="family_avatar"><!--头像-->
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/family_avatar_stroke</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:src">@mipmap/parent_face_default</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="family_avatar_port"><!--头像竖版-->
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:background">@drawable/family_avatar_stroke</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:src">@mipmap/parent_face_default</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="family_avatar_base_layout"><!--头像外层-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="family_avatar_base_layout_port"><!--头像外层竖版-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="camera_and_family"><!--相机预览和家人列表、竖屏-->
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="camera_and_family_port"><!--相机预览和家人列表、竖屏-->
+        <item name="android:paddingRight">25dp</item>
+    </style>
+
+
+    <style name="family_call"><!--家庭成员称呼-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="card_holder_avatar"><!--刷卡人智慧树头像-->
+        <item name="android:layout_width">116dp</item>
+        <item name="android:layout_height">116dp</item>
+    </style>
+
+
+    <style name="card_holder_avatar_level"><!--刷卡人等级-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/level_bg</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="card_holder_name"><!--刷卡人名字-->
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">60dp</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/light_purple</item>
+    </style>
+
+    <style name="card_holder_flower"><!--刷卡人小红化数了-->
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <style name="card_holder_icon"><!--刷卡人VIP和小红花图标-->
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:baselineAlignBottom">true</item>
+    </style>
+
+    <style name="record_info_table"><!--刷卡信息表-->
+        <item name="android:layout_marginStart">38dp</item>
+    </style>
+
+    <style name="record_info_line"><!--刷卡信息，下线-->
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="record_info_text"><!--刷卡信息,文字-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="record_info_table_row"><!--刷卡信息，行-->
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--body部分-->
+    <style name="system_notice">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/light_black</item>
+    </style>
+
+    <!--所有内容部分-->
+    <style name="content_of_body">
+        <item name="android:paddingTop">50dp</item>
+    </style>
+    <!--所有内容部分-->
+    <style name="content_of_body_port">
+        <item name="android:paddingTop">35dp</item>
+    </style>
+
+    <style name="clock_time">
+        <item name="android:textSize">42sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="camera_title_date">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#90caf9</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">40dp</item>
+    </style>
+
+    <style name="machine_id_mark_port">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_gravity">left|bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="machine_id_mark">
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:layout_gravity">left|bottom</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 相册的边距 -->
+    <style name="camera_watch_frame_style">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!-- 家庭列表四个点 -->
+    <style name="family_list_line">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <!-- 家庭列表四个点 -->
+    <style name="family_list_line_port">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- user_info 边距-->
+    <style name="user_info_linear_style">
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+    <!-- user_info_port 边距-->
+    <style name="user_info_port_linear_style">
+        <item name="android:layout_marginTop">70dp</item>
+    </style>
+
+    <style name="user_info_img_style">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <!--no sign tip-->
+    <style name="no_sign_tip">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">#009688</item>
+    </style>
+
+    <!--network_warning-->
+    <style name="network_warning">
+        <item name="android:textSize">24sp</item>
+    </style>
+</resources>

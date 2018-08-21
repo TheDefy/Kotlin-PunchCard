@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Linear_frame_style"><!--边框 横 -->
+        <item name="android:paddingTop">178dp</item>
+        <item name="android:paddingLeft">340dp</item>
+        <item name="android:paddingRight">340dp</item>
+    </style>
+
+    <style name="tv_title_style"><!--标题 横 -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="content_frame_style"> <!--通知内容边框 横 -->
+        <item name="android:layout_marginBottom">60dp</item>
+        <item name="android:layout_marginTop">80dp</item>
+    </style>
+
+    <style name="content_lineSpacingExtra"> <!--通知内容间距 横 -->
+        <item name="android:lineSpacingExtra">36dp</item>
+    </style>
+
+
+    <style name="Linear_frame_port_style">  <!--边框 竖 -->
+        <item name="android:paddingTop">275dp</item>
+        <item name="android:paddingLeft">185dp</item>
+        <item name="android:paddingRight">185dp</item>
+    </style>
+
+    <style name="tv_title_port_style">  <!--标题 竖 -->
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="content_frame_port_style"> <!--通知内容边框 竖 -->
+        <item name="android:layout_marginBottom">80dp</item>
+        <item name="android:layout_marginTop">120dp</item>
+    </style>
+
+    <style name="content_lineSpacingExtra_port"> <!--通知内容间距 竖 -->
+        <item name="android:lineSpacingExtra">35dp</item>
+    </style>
+
+</resources>

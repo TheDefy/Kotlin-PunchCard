@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--content layout-->
+    <style name="layout_content_area">
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+    </style>
+
+    <style name="layout_weather_and_time">
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+    <!--相机尺寸-->
+    <style name="gl_camera">
+        <item name="android:layout_width">490dp</item>
+        <item name="android:layout_height">350dp</item>
+    </style>
+    <!--校园之星容寸-->
+    <style name="layout_star">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    <!--校园之星左边两条线-->
+    <style name="line_left_of_layout_star">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_marginTop">45dp</item>
+        <item name="android:layout_marginBottom">45dp</item>
+    </style>
+    <!--孩子头像容器-->
+    <style name="layout_user_avatar">
+        <item name="android:layout_margin">18dp</item>
+    </style>
+    <!--用户打卡信息表->容器-->
+    <style name="layout_user_info_table">
+        <item name="android:layout_marginTop">45dp</item>
+    </style>
+    <!--接送家长头像列表-->
+    <style name="iv_family_avatar">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginTop">21dp</item>
+        <item name="android:layout_marginBottom">21dp</item>
+        <item name="android:layout_marginLeft">42dp</item>
+        <item name="android:layout_marginRight">42dp</item>
+    </style>
+    <!--欢迎界面狮子和长颈鹿-->
+    <style name="iv_lion_giraffe">
+        <item name="android:layout_marginEnd">220dp</item>
+        <item name="android:paddingBottom">60dp</item>
+    </style>
+</resources>

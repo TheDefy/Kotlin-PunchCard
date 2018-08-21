@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_bar" />
+
+        <LinearLayout
+            style="@style/content_of_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/camera_catch_base_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/clock_area" />
+
+                <LinearLayout
+                    style="@style/camera_and_family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/camera_area"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/camera_watch" />
+
+                    <ImageView
+                        style="@style/family_list_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/family_line" />
+
+                    <include layout="@layout/family_list" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/main_frame_start">
+
+                <RelativeLayout
+                    android:id="@+id/rl_nocardinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/main_img_error_bottom"
+                    android:layout_marginRight="@dimen/nocardinfo_qrcode_marginRight"
+                    android:layout_marginTop="@dimen/nocardinfo_qrcode_marginTop"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        fontPath="@string/font_path_cctyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/no_card_info"
+                        android:textColor="@color/cardinfo_out"
+                        android:textSize="@dimen/tv_title_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_qrcode_nocardinfo"
+                        android:layout_width="@dimen/nocardinfo_qrcode_width"
+                        android:layout_height="@dimen/nocardinfo_qrcode_width"
+                        android:layout_below="@+id/tv_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/nocardinfo_bg"
+                        android:scaleType="center" />
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        fontPath="@string/font_path_cctyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_qrcode_nocardinfo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/no_card_info_tip"
+                        android:textSize="@dimen/nocardinfo_tip" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.bbtree.cardreader.view.widget.MarqueeTextView
+                        style="@style/system_notice"
+                        fontPath="@string/font_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/system_notice"
+                        android:gravity="bottom"
+                        android:text="@string/default_system_notice" />
+
+                    <LinearLayout
+                        android:id="@+id/legitimate_card_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/user_info" />
+
+                        <include layout="@layout/record_info" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    >>>>>>> Stashed changes
+    >>>>>>> Stashed changes
+
+    <TextView
+        android:id="@+id/network_warning"
+        style="@style/network_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:textColor="#c33d3d"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/floating_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/machine_info"
+        style="@style/machine_id_mark"
+        fontPath="fonts/DejaVuSerif.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 二维码 begin -->
+    <RelativeLayout
+        android:layout_width="@dimen/iv_qrcode_back_width"
+        android:layout_height="@dimen/iv_qrcode_back_height"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="@dimen/iv_qrcode_back_marginTop">
+
+        <ImageView
+            android:id="@+id/iv_qrcode_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/qrcode_back" />
+
+        <ImageView
+            android:id="@+id/iv_qrcode"
+            android:layout_width="@dimen/iv_qrcode_width"
+            android:layout_height="@dimen/iv_qrcode_height"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/iv_qrcode_marginRight"
+            android:layout_marginTop="@dimen/iv_qrcode_marginTop"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+    <!-- 二维码 end -->
+
+</FrameLayout>

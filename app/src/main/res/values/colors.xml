@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="white80">#BFffffff</color>
+    <color name="grey">#999999</color>
+    <color name="light_black">#57524A</color>
+    <color name="green">#63C468</color>
+    <color name="bb_loading_green">#1ab469</color>
+    <color name="light_purple">#D5BEEF</color>
+
+    <color name="record_class">#F7C584</color>
+    <color name="record_time">#76d4cc</color>
+    <color name="record_card_number">#FFBAC9</color>
+    <color name="record_temp">#90CAF9</color>
+
+    <color name="class_speaker_setting1_content_color">#666666</color>
+    <color name="class_speaker_setting1_status_color">#333333</color>
+    <color name="class_speaker_setting1_button_no">#cccccc</color>
+    <color name="class_speaker_setting2_button_add">#80c5fc</color>
+    <color name="class_speaker_setting2_divider">#eeeeee</color>
+    <color name="class_speaker_setting2_item_divider">#e4e4e4</color>
+    <color name="class_speaker_setting2_button_delete">#FD9BA6</color>
+    <color name="class_speaker_setting3_divider">#f5f5f5</color>
+    <color name="class_speaker_setting_dialog">#99000000</color>
+
+    <color name="cardinfo_out">#66BF70</color>
+    <color name="qrcode_nocardinfo">#E3E3E3</color>
+
+    <color name="main_half_transparent">#30000000</color>
+
+    <color name="main_familya_bg">#59D3C9</color>
+    <color name="main_familyb_bg">#FD8D9A</color>
+
+    <color name="main_default_number">#F68F40</color>
+    <color name="main_default_time">#42CEC0</color>
+    <color name="main_default_temperature">#6BB8F4</color>
+    <color name="main_default_class">#EA7784</color>
+
+    <color name="main_default_name">#3AD09D</color>
+
+    <color name="no_card_info">#66BF70</color>
+    <color name="no_card_info_bg">#E3E3E3</color>
+
+</resources>

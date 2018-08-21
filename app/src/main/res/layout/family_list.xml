@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/family_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/family_avatar_base_layout">
+
+            <ImageView
+                android:id="@+id/familyA"
+                style="@style/family_avatar" />
+
+            <TextView
+                android:id="@+id/familyA_name"
+                style="@style/family_call"
+                android:text="爸爸" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/family_avatar_base_layout">
+
+            <ImageView
+                android:id="@+id/familyB"
+                style="@style/family_avatar" />
+
+            <TextView
+                android:id="@+id/familyB_name"
+                style="@style/family_call"
+                android:text="妈妈" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/family_avatar_base_layout">
+
+            <ImageView
+                android:id="@+id/familyC"
+                style="@style/family_avatar" />
+
+            <TextView
+                android:id="@+id/familyC_name"
+                style="@style/family_call"
+                android:text="爷爷" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/family_avatar_base_layout">
+
+            <ImageView
+                android:id="@+id/familyD"
+                style="@style/family_avatar" />
+
+            <TextView
+                android:id="@+id/familyD_name"
+                style="@style/family_call"
+                android:text="奶奶" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

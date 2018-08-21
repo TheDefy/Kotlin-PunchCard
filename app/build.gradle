@@ -1,0 +1,306 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+//apply plugin: 'bugly'
+
+android {
+    File propFile = rootProject.file('config.properties');
+    def Properties props = new Properties();
+    props.load(new InputStreamReader(new FileInputStream(propFile), "utf-8"));
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    //greendao 数据库升级版本号
+    greendao {
+        schemaVersion 7
+        targetGenDir 'src/main/java'
+        daoPackage 'com.bbtree.cardreader.greendao.gen'
+    }
+
+    defaultConfig {
+        applicationId "com.bbtree.cardreader"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode Integer.parseInt(props["VERSION_CODE"])
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            jniDebuggable false
+            renderscriptDebuggable false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        factory.initWith(release)
+        factory {
+            versionNameSuffix '-Factory'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled true
+            jniDebuggable true
+            renderscriptDebuggable true
+            debuggable true
+            versionNameSuffix '-debug'
+//            applicationIdSuffix ".debug" // 为包名添加后缀
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            //'x86', 'x86_64', 'arm64-v8a', 'armeabi-v7a','armeabi'
+            include 'armeabi-v7a'
+            universalApk false
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    sourceSets {
+        main {
+//            jni.srcDirs = ["libs"]
+//            res.srcDirs = ['src/main/res', 'src/main/res/sw1080dp', 'src/main/res/sw900dp']
+        }
+    }
+
+    productFlavors {
+        String vName = props['VERSION_NAME']
+
+        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+        android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+        android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+
+        Product {
+            versionName vName
+            resValue("string", "baseUrl", props['AGENT_HOST_RELEASE'])
+            resValue("string", "port", props['AGENT_HOST_RELEASE_PORT'])
+        }
+        BetaA {
+            versionName vName + '_BetaA'
+            resValue("string", "baseUrl", props['AGENT_HOST_BETAA'])
+            resValue("string", "port", props['AGENT_HOST_BETA_PORT'])
+        }
+        BetaB {
+            versionName vName + '_BetaB'
+            resValue("string", "baseUrl", props['AGENT_HOST_BETAB'])
+            resValue("string", "port", props['AGENT_HOST_BETA_PORT'])
+        }
+        BetaC {
+            versionName vName + '_BetaC'
+            resValue("string", "baseUrl", props['AGENT_HOST_BETAC'])
+            resValue("string", "port", props['AGENT_HOST_BETA_PORT'])
+        }
+        BetaD {
+            versionName vName + '_BetaD'
+            resValue("string", "baseUrl", props['AGENT_HOST_BETAD'])
+            resValue("string", "port", props['AGENT_HOST_BETA_PORT'])
+        }
+        DevA {
+            versionName vName + '_DevA'
+            resValue("string", "baseUrl", props['AGENT_HOST_DEVA'])
+            resValue("string", "port", props['AGENT_HOST_DEV_PORT'])
+        }
+        DevB {
+            versionName vName + '_DevB'
+            resValue("string", "baseUrl", props['AGENT_HOST_DEVB'])
+            resValue("string", "port", props['AGENT_HOST_DEV_PORT'])
+        }
+        DevC {
+            versionName vName + '_DevC'
+            resValue("string", "baseUrl", props['AGENT_HOST_DEVC'])
+            resValue("string", "port", props['AGENT_HOST_DEV_PORT'])
+        }
+        DevD {
+            versionName vName + '_DevD'
+            resValue("string", "baseUrl", props['AGENT_HOST_DEVD'])
+            resValue("string", "port", props['AGENT_HOST_DEV_PORT'])
+        }
+
+        buildTypes.release {
+            // 这里的参数是为了在 java 代码中使用，具体的使用方式为：context.getResources().getString(R.string.strKey);
+            resValue("string", "buglyid", props['BUGLY_APPID_RELEASE'])
+            resValue("string", "countlyUrl", props['COUNTLY_URL_RELEASE'])
+            resValue("string", "countlyKey", props['COUNTLY_KEY_RELEASE'])
+            resValue("string", "package_name", "com.bbtree.cardreader")
+            buildConfigField("boolean", "isDebug", "false")
+            buildConfigField("boolean", "isFactory", "false")
+            manifestPlaceholders = [label       : "@string/app_name",
+                                    package_name: "com.bbtree.cardreader",
+                                    fabricKey   : "f9e8db0b38cb5313a6f9fdf872b82c1303a90b55"]
+        }
+        buildTypes.factory {
+            resValue("string", "buglyid", props['BUGLY_APPID_RELEASE'])
+            resValue("string", "countlyUrl", props['COUNTLY_URL_RELEASE'])
+            resValue("string", "countlyKey", props['COUNTLY_KEY_RELEASE'])
+            resValue("string", "package_name", "com.bbtree.cardreader")
+            buildConfigField("boolean", "isDebug", "false")
+            buildConfigField("boolean", "isFactory", "true")
+            manifestPlaceholders = [label       : "@string/app_name_debug",
+                                    package_name: "com.bbtree.cardreader",
+                                    fabricKey   : "2c266d442939503bb0e1d8f913c19150f4229553"]
+        }
+        buildTypes.debug {
+            resValue("string", "buglyid", props['BUGLY_APPID_DEBUG'])
+            resValue("string", "countlyUrl", props['COUNTLY_URL_DEBUG'])
+            resValue("string", "countlyKey", props['COUNTLY_KEY_DEBUG'])
+            resValue("string", "package_name", "com.bbtree.cardreader")
+            manifestPlaceholders = [label       : "@string/app_name_debug",
+                                    package_name: "com.bbtree.cardreader",
+                                    fabricKey   : "2c266d442939503bb0e1d8f913c19150f4229553"]
+
+            buildConfigField("boolean", "isDebug", "true")
+            buildConfigField("boolean", "isFactory", "false")
+        }
+    }
+
+    signingConfigs {
+        release {
+        }
+        factory.initWith(release)
+        debug.initWith(release)
+    }
+
+    applicationVariants.all { variant ->
+//        def buglyAppId = null;
+//        def buglyAppKey = null;
+        variant.outputs.each { output ->
+            if (variant.buildType.name.equals('release') || variant.buildType.name.equals('factory')) {
+//                buglyAppId = props['BUGLY_APPID_RELEASE']
+//                buglyAppKey = props['BUGLY_APPKEY_RELEASE']
+                StringBuilder sb = new StringBuilder();
+                //sb.append(productFlavors.name)
+                //sb.append(variant.name)
+//                sb.append('-')
+                sb.append(variant.versionName)
+                sb.append('_')
+                sb.append(variant.versionCode)
+                sb.append('_')
+                sb.append(variant.buildType.name)
+                sb.append('_')
+                sb.append(getDate())
+                String apkName = sb.toString()
+                apkName = apkName.replace(".", "_")
+//                logger.info(apkName + buglyAppId + buglyAppKey)
+                output.outputFile = new File(
+                        output.outputFile.parent,
+                        'Cardreader_' + apkName + ".apk")
+            } else {
+//                buglyAppId = props['BUGLY_APPID_DEBUG']
+//                buglyAppKey = props['BUGLY_APPKEY_DEBUG']
+                StringBuilder sb = new StringBuilder();
+                //sb.append(productFlavors.name)
+                //sb.append(variant.name)
+//                sb.append('-')
+                sb.append(variant.versionName)
+                sb.append('_')
+                sb.append(variant.versionCode)
+                sb.append('_')
+                sb.append(variant.buildType.name)
+                String apkName = sb.toString()
+                apkName = apkName.replace(".", "_")
+//                logger.info(apkName + buglyAppId + buglyAppKey)
+                output.outputFile = new File(
+                        output.outputFile.parent,
+                        'Cardreader_' + apkName + ".apk")
+
+            }
+//            if (buglyAppId != null) {
+//                variant.ext.buglyAppId = buglyAppId
+//            }
+//            if (buglyAppKey != null) {
+//                variant.ext.buglyAppKey = buglyAppKey
+//            }
+//            println("buglyAppId" + buglyAppId + "--buglyAppKey--" + buglyAppKey)
+
+        }
+    }
+
+    buildToolsVersion '25.0.0'
+}
+
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmmss')
+    return formattedDate
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile dep.junit
+    compile dep.database_sqlcipher
+
+    //googlesuport
+    compile dep.supportAnnotations
+    compile dep.appcompat
+
+    //butterknife
+    compile dep.butterknife
+    annotationProcessor dep.annotationbutterknife
+
+    compile dep.mqtt
+    //bugly
+//    compile dep.bugly
+//    compile dep.nativebugly
+
+//    compile dep.countly
+
+    compile dep.picasso
+    compile dep.anim_nineo  //anim 动画
+
+    compile dep.okhttp
+    compile dep.gson
+    compile dep.logger
+
+    compile dep.rxandroid
+    compile dep.rxjava
+
+    compile dep.BlockCanary
+
+//    compile dep.greendao
+    compile dep.eventbus
+    compile dep.zxing
+    compile dep.roundedimageview
+
+    debugCompile dep.debugleakcanary
+    releaseCompile dep.releaseleakcanary
+    testCompile dep.testleakcanary
+    factoryCompile dep.releaseleakcanary
+
+    compile project(':baselib')
+    compile project(path: ':temperature')
+    compile project(path: ':childservice')
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:answers:1.3.13@aar') {
+        transitive = true;
+    }
+
+}

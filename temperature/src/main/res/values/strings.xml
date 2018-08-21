@@ -1,0 +1,5 @@
+<resources>
+    <string name="ble_temp_connected">蓝牙连接成功</string>
+    <string name="ble_temp_connecting">正在连接</string>
+    <string name="ble_temp_disconnect">蓝牙连接断开</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_topic"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/class_speaker_setting1_topic_margin_top"
+        android:text="@string/speaker_setting1_welcome"
+        android:textColor="@color/green"
+        android:textSize="@dimen/class_speaker_setting1_topic_text_size" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_topic"
+        android:layout_marginEnd="@dimen/class_speaker_setting1_content_margin_right"
+        android:layout_marginStart="@dimen/class_speaker_setting1_content_margin_left"
+        android:layout_marginTop="@dimen/class_speaker_setting1_content_margin_top"
+        android:lineSpacingExtra="@dimen/class_speaker_setting2_divider"
+        android:text="@string/speaker_setting1_content"
+        android:textColor="@color/class_speaker_setting1_content_color"
+        android:textSize="@dimen/class_speaker_setting1_content_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/rl_status_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_send_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/class_speaker_setting1_send_layout_status_margin_right"
+            android:layout_marginTop="@dimen/class_speaker_setting1_send_layout_margin_top"
+            android:background="@drawable/class_speaker_setting1_status_selector" />
+
+        <TextView
+            android:id="@+id/tv_send_content"
+            fontPath="@string/font_path_cctyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/class_speaker_setting1_send_layout_margin_top"
+            android:layout_toEndOf="@id/iv_send_status"
+            android:gravity="center_vertical"
+            android:textColor="@color/class_speaker_setting1_status_color"
+            android:textSize="@dimen/class_speaker_setting1_status_content_size" />
+
+        <ImageView
+            android:id="@+id/iv_net_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_send_status"
+            android:layout_marginEnd="@dimen/class_speaker_setting1_net_layout_status_margin_right"
+            android:layout_marginTop="@dimen/class_speaker_setting1_net_layout_margin_top"
+            android:background="@drawable/class_speaker_setting1_status_selector" />
+
+        <TextView
+            android:id="@+id/tv_net_content"
+            fontPath="@string/font_path_cctyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_send_content"
+            android:layout_marginTop="@dimen/class_speaker_setting1_net_layout_margin_top"
+            android:layout_toEndOf="@id/iv_net_status"
+            android:gravity="center_vertical"
+            android:textColor="@color/class_speaker_setting1_status_color"
+            android:textSize="@dimen/class_speaker_setting1_status_content_size" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_setting"
+        fontPath="@string/font_path_cctyt"
+        android:layout_width="@dimen/class_speaker_setting1_button_width"
+        android:layout_height="@dimen/class_speaker_setting1_button_height"
+        android:layout_below="@id/rl_status_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/class_speaker_setting1_button_margin_top"
+        android:background="@drawable/class_speaker_setting1_button_selector"
+        android:text="@string/speaker_setting1_setting_button"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

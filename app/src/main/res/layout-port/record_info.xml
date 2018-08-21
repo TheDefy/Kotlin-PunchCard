@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            style="@style/record_info_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                style="@style/record_info_line"
+                android:background="@mipmap/record_info_tab_line" />
+
+
+            <TableRow style="@style/record_info_table_row">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cropToPadding="true"
+                    android:src="@mipmap/icon_class_info" />
+
+                <TextView
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/class_table_filed"
+                    android:textColor="@color/record_class" />
+
+                <TextView
+                    android:id="@+id/class_name"
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="智慧班"
+                    android:textColor="@color/record_class" />
+            </TableRow>
+
+            <View
+                style="@style/record_info_line"
+                android:background="@mipmap/record_info_tab_line" />
+
+            <TableRow style="@style/record_info_table_row">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_time_info" />
+
+                <TextView
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_table_filed"
+                    android:textColor="@color/record_time" />
+
+                <TextView
+                    android:id="@+id/now_time"
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:10"
+                    android:textColor="@color/record_time" />
+            </TableRow>
+
+            <View
+                style="@style/record_info_line"
+                android:background="@mipmap/record_info_tab_line" />
+
+            <TableRow style="@style/record_info_table_row">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_card_number" />
+
+                <TextView
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_id_table_filed"
+                    android:textColor="@color/record_card_number" />
+
+                <TextView
+                    android:id="@+id/card_number_show"
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4000-996-999"
+                    android:textColor="@color/record_card_number" />
+            </TableRow>
+
+            <View
+                style="@style/record_info_line"
+                android:background="@mipmap/record_info_tab_line" />
+
+            <TableRow
+                android:id="@+id/temp_tablerow"
+                style="@style/record_info_table_row">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_temp_info" />
+
+                <TextView
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_table_filed"
+                    android:textColor="@color/record_temp" />
+
+                <TextView
+                    android:id="@+id/now_temp"
+                    style="@style/record_info_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature_table_value"
+                    android:textColor="@color/record_temp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</merge>

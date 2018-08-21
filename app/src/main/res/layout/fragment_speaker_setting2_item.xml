@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                fontPath="@string/font_path_cctyt"
+                android:id="@+id/tv_speaker_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/class_speaker_setting1_status_color"
+                android:textSize="@dimen/class_speaker_setting2_title_text_size" />
+
+            <TextView
+                fontPath="@string/font_path_cctyt"
+                android:id="@+id/tv_speaker_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/class_speaker_setting2_item_margin"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/class_speaker_setting1_content_text_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        fontPath="@string/font_path_cctyt"
+        android:id="@+id/bt_setting"
+        android:layout_width="@dimen/class_speaker_setting2_title_height"
+        android:layout_height="@dimen/class_speaker_setting2_item_button_height"
+        android:layout_marginEnd="@dimen/class_speaker_setting2_title_line_margin_left"
+        android:background="@drawable/class_speaker_setting2_item_setting_button_bg_selector"
+        android:text="@string/speaker_setting2_item_button_setting"
+        android:textColor="@drawable/class_speaker_setting2_item_setting_button_text_selector" />
+
+    <Button
+        fontPath="@string/font_path_cctyt"
+        android:id="@+id/bt_delete"
+        android:layout_width="@dimen/class_speaker_setting2_title_height"
+        android:layout_height="@dimen/class_speaker_setting2_item_button_height"
+        android:layout_marginEnd="@dimen/class_speaker_setting1_content_margin_top"
+        android:background="@drawable/class_speaker_setting2_item_delete_button_bg_selector"
+        android:text="@string/speaker_setting2_item_button_delete"
+        android:textColor="@drawable/class_speaker_setting2_item_delete_button_text_selector" />
+
+</LinearLayout>

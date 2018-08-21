@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextClock
+        style="@style/clock_time"
+        fontPath="@string/font_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/time_bg"
+        android:format12Hour="k:mm"
+        android:format24Hour="k:mm"
+        android:gravity="center"
+        android:timeZone="GMT+0800" />
+
+    <TextClock
+        style="@style/camera_title_date"
+        fontPath="@string/font_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:format12Hour="MM月dd日 EEEE"
+        android:format24Hour="MM月dd日 EEEE"
+        android:gravity="center"
+        android:maxLines="1"
+        android:timeZone="GMT+0800" />
+</LinearLayout>
