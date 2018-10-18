@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 //            KotlinFragment fragment = new KotlinFragment();
 
             PunchCardKotlin fragment = new PunchCardKotlin();
+
+//            LearnFragment fragment = new LearnFragment();
             getFragmentManager().beginTransaction().replace(R.id.fl_content, fragment).commit();
         }
 
